@@ -1,0 +1,30 @@
+.button{
+    border: 2px solid;
+    width:200px;
+    height:200px;
+    position: relative;
+    margin:3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    position:relative;
+    width:100%;
+    height:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+}
+button{
+    background-color: rgb(75, 38, 206);
+    color:white;
+    line-height: 3rem;
+    font-size: 2rem;
+}
+.congrate{
+    margin:2rem;
+    font-weight: bold;
+    display: none;
+}
