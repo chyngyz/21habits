@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <link href="progress.css" rel="stylesheet"/>
+        <script src="jquery-1.10.2.min.js"></script>
+    </head>
+    <body>
+       
+        <div id="circle1"></div>
+        <div id="shadowring"></div>
+        <div id="circle2"></div>
+<button id="button">CLICK HERE</button>
+        <canvas height="620" width="620" id="counter"/>  
+        
+    </body>
+    
+    
+    
+    <script type="application/javascript">
+        var counter = document.getElementById('counter').getContext('2d');
+        var no = 1; // Starting Point
+        var pointToFill = 4.72;  //Point from where you want to fill the circle
+       var cw = counter.canvas.width;  //Return canvas width
+       var ch = counter.canvas.height; //Return canvas height
+        var diff;   // find the different between current value (no) and trageted value (100)
+        document.querySelector('button').addEventListener('click',
+        function(){
+            diff = ((no/21) * Math.PI*2*10);
+            
+            counter.clearRect(0,0,cw,ch);   // Clear canvas every time when function is call
+            
+            counter.lineWidth = 55;     // size of stroke
+            
+            counter.fillStyle = '#fff';     // color that you want to fill in counter/circle
+            if(no%2===1){
+            counter.strokeStyle = '#EE2E05';  
+            }
+            counter.textAlign = 'center';
+            
+            counter.font = "40px monospace";    //set font size and face
+            
+            
+
+            counter.beginPath();
+            counter.arc(310,310,150,pointToFill,diff/10+pointToFill);    //arc(x,y,radius,start,stop)
+            
+            counter.stroke();   // to fill stroke
+            
+            // now add condition
+            
+            if(no >=21)
+            {
+                clearTimeout(fill);     //fill is a variable that call the function fillcounter()
+                document.querySelector('#button').style.display='none';
+            
+            }
+            if(no===21){
+                counter.fillText('GOOD JOB!',310,310);
+            } else{
+                counter.fillText(no+'-DAY',310,310);  
+            }
+            no++;
+
+        })//now call the function
+        
+        
+        var fill = setInterval(fillCounter,50);     //call the fillCounter function after every 50MS
+
+    </script>
+</html>
