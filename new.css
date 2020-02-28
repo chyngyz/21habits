@@ -1,0 +1,139 @@
+.container{
+    width:50%;
+    display: flex;
+    justify-content: center;
+    margin:0 auto;
+    flex-direction: column;
+    border:1px solid rgba(151, 146, 146, 0.137);
+    box-shadow: 3px  rgba(112, 112, 112, 0.123);
+}
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;    
+
+
+}
+.header{
+    width:150px;
+    font-family: Roboto;
+    font-weight: 100;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #4F4F4F;
+    height:auto;
+    margin: 42px auto 16px;
+
+}
+button{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+    text-align: center;
+    text-transform: uppercase;
+    padding:10px;
+    border-radius: 6px;
+    margin-bottom: 16px;
+    background: #2F80ED;
+    color: #F2F2F2;
+    line-height: 8px;
+    width:150px;
+}
+.add__item{
+    width:100%;
+    height:auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: #F2F2F2;
+    border-radius: 6px;
+    padding-bottom: 2rem;
+
+}
+.info-0{
+    display: flex;
+    flex-direction: row;
+    border:3px solid white;
+    width:100%;
+}
+.success,.fail,.left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding:0;
+    height:4rem;
+    margin:4px;
+    
+    
+
+}
+.success{
+    margin-left:3rem
+
+}
+
+.green,.red,.purple{
+    padding:0;
+    margin:0;
+    line-height: 0;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    margin: 1.2rem 1.6rem 0 1.6rem;
+    
+
+}
+.green{
+    color: #27AE60;
+}
+.red{
+    color: #EB5757;
+}
+.purple{
+    color: #9B51E0;
+}
+
+.subtitle{
+font-family: Roboto;
+font-style: normal;
+font-weight: 200;
+font-size: 10px;
+line-height: 12px;
+text-transform: uppercase;
+}
+h2{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 18px;
+    line-height: 16px; 
+    margin:auto 0;
+    
+    padding:0 1rem;
+}
+
+.circle{
+    margin-top:2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.congrate{
+    display:none;
+    color:rgb(56, 15, 238);
+    line-height: 3rem;
+    font-weight: bold;
+}
+
+
+
+
+
