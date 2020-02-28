@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>21</title>
+    <link rel="stylesheet" href="new.css">
+</head>
+<body>
+    <div class="container">
+
+        <div class="title">
+            <h1 class="header">21 кундук адат</h1>
+
+            <div class="button-1">
+                <button>жаны адат кошуу</button>
+            </div>
+        </div>
+
+        
+
+        <div class="add__item" id="add-0">
+            <div class="info-0">
+                
+                <h2>25 бет китеп окуу</h2>
+                <div class="success">
+                    <div class="digit">
+                        <p class="green">12</p>
+                    </div>
+                        
+                    <div class="digit__subtitle">
+                        <p  class="subtitle">Ийгиликтуу</p>
+                    </div>
+
+                </div>
+                <div class="fail">
+                    <div class="digit">
+                        <p class="red">1</p>
+
+                    </div>
+        
+                    <div class="digit__subtitle">
+                        <p class="subtitle">болбоду</p>
+       
+                    </div>
+
+                </div>
+                <div class="left">
+                    <div class="digit">
+                        <p class="purple">19</p>
+
+                    </div>
+        
+                    <div class="digit__subtitle">
+                          <p class="subtitle">калдык</p>      
+                    </div>
+
+                </div>
+            </div>
+            
+            <div class="circle">
+
+                <div id="circle1"></div>
+                <div id="shadowring"></div>
+                <div id="circle2"></div>
+                <div class="button"><button>Called</button></div>
+                <div class="congrate">Ооо! Эн жакшы, созуно турдун!</div>
+                <canvas height="200" width="200" id="counter"/>
+
+
+            </div>
+        </div>
+
+    </div>
+
+        
+
+
+
+
+
+    
+       <script src="new.js"></script>  
+</body>
+</html>
