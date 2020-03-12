@@ -1,1 +1,65 @@
-
+.add{
+   position: absolute;
+   width: 100%;
+   height:100%;
+   left: 0px;
+   top: 0px;
+   background: rgba(0, 0, 0, 0.32);
+}
+.addwindow{
+    margin-top: 40%;
+    width: 80%;
+    height: 50%;
+    text-align: center;
+    background-color: white;
+    margin-left: 10%;
+    border-radius: 10px;
+    border: 1px solid #BDBDBD;
+    box-sizing: border-box;
+    border-radius: 6px;
+}
+h2{
+    font-family: Nova Slim;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 150%;
+    text-transform: uppercase;
+    padding-top: 5%;
+}
+#nameofhabbit{
+    width: 80%;
+    height: 15%;
+    border-radius: 5px;
+}
+#days{
+    margin-top: 10%;
+    width: 80%;
+    height: 15%;
+    border-radius: 5px;
+}
+#addbutton{
+    margin-top: 10%;
+    margin-bottom: 10%;
+    width: 80%;
+    height: 15%;
+    border-radius: 5px;
+    background-color: #2F80ED;
+    color:white;
+    border: 1px solid #BDBDBD;
+    box-sizing: border-box;
+    border-radius: 6px;
+}
+input{
+    padding-left:5%;
+    font-size: medium;
+    border: 1px solid #BDBDBD;
+    box-sizing: border-box;
+    border-radius: 6px;
+}
+input::placeholder{
+    padding-left:5%;
+    font-size: medium;
+    font-family: Roboto;
+    font-style: normal;
+    color: #BDBDBD;
+}
