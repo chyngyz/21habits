@@ -1,4 +1,4 @@
-.add{
+.add {
    position: absolute;
    width: 100%;
    height:100%;
@@ -6,7 +6,8 @@
    top: 0px;
    background: rgba(0, 0, 0, 0.32);
 }
-.addwindow{
+
+.addwindow {
     margin-top: 40%;
     width: 80%;
     height: 50%;
@@ -18,7 +19,8 @@
     box-sizing: border-box;
     border-radius: 6px;
 }
-h2{
+
+h2 {
     font-family: Nova Slim;
     font-style: normal;
     font-weight: normal;
