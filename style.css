@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Nova+Slim|Roboto&display=swap');
+
 .add {
    position: absolute;
    width: 100%;
@@ -8,60 +10,76 @@
 }
 
 .addwindow {
-    margin-top: 40%;
-    width: 80%;
-    height: 50%;
-    text-align: center;
+    position: absolute;
+    top: 25.74%;
+    left:5.85%;
+    width: 88.3%;
+    height: 45.32%;
     background-color: white;
-    margin-left: 10%;
     border-radius: 10px;
+    text-align: center;
+}
+
+#habitheader {
+    position: relative;
+    top: 9.24%;
+    font-family: 'Nova Slim', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+}
+
+#nameofhabbit {
+    position: absolute;
+    top: 24.73%;
+    left: 8.1%;
+    width: 83.78%;
+    height: 14.13%;
+}
+
+#days {
+    position: absolute;
+    top: 49.46%;
+    left: 8.1%;
+    width: 83.78%;
+    height: 14.13%;
+}
+
+#addbutton {
+    position: absolute;
+    top:74.18%;
+    left:8.1%;
+    width: 83.78%;
+    height: 14.13%;
+    background-color: #2F80ED;
+    color:white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
     border: 1px solid #BDBDBD;
     box-sizing: border-box;
     border-radius: 6px;
 }
 
-h2 {
-    font-family: Nova Slim;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 150%;
-    text-transform: uppercase;
-    padding-top: 5%;
-}
-#nameofhabbit{
-    width: 80%;
-    height: 15%;
-    border-radius: 5px;
-}
-#days{
-    margin-top: 10%;
-    width: 80%;
-    height: 15%;
-    border-radius: 5px;
-}
-#addbutton{
-    margin-top: 10%;
-    margin-bottom: 10%;
-    width: 80%;
-    height: 15%;
-    border-radius: 5px;
-    background-color: #2F80ED;
-    color:white;
+input {
+    padding-left: 5.73%;
+    font-size: 21px;
+    line-height: 24px;
     border: 1px solid #BDBDBD;
     box-sizing: border-box;
     border-radius: 6px;
 }
-input{
-    padding-left:5%;
-    font-size: medium;
-    border: 1px solid #BDBDBD;
-    box-sizing: border-box;
-    border-radius: 6px;
-}
-input::placeholder{
-    padding-left:5%;
-    font-size: medium;
-    font-family: Roboto;
+
+input::placeholder {
+    font-family: 'Roboto',sans-serif;
     font-style: normal;
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 21px;
     color: #BDBDBD;
 }
