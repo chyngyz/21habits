@@ -17,14 +17,14 @@
 .modal_window {
     position: relative;
     top: 25%;
-    left: 30%;
-    width: 40%;
+    left: 25%;
+    width: 50%;
     height: 45%;
     background-color: white;
     border-radius: 10px;
 }
 
-.habitheader {
+.habbit_header {
     position: relative;
     top: 9%;
     font-family: 'Nova Slim', sans-serif;
@@ -74,15 +74,10 @@
     color: #BDBDBD;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
     .modal_window {
-        left: 6%;
-        width: 88%;
+        left: 8%;
+        width: 84%;
     }
 }
-@media screen and (max-width: 800px) {
-    .modal_window {
-        left: 20%;
-        width: 60%;
-    }
-}
+
