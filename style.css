@@ -1,105 +1,178 @@
-body{
-    width: 90%;
-    font-family: 'Roboto Condensed', sans-serif;
-    margin:0 auto;
+@import url('https://fonts.googleapis.com/css?family=Nova+Slim|Roboto&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    padding:0;
+    margin:0;
+
 }
-.container{
-    width:100%;
+.modal_window_background {
+   position: fixed;
+   width: 100%;
+   height:100%;
+   min-height: 400px;
+   left: 0px;
+   top: 0px;
+   background: rgba(0, 0, 0, 0.32);
+   text-align: center;
+   display: none;
 }
-.header{
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height:150px;
-    margin-bottom:0;
+
+.modal_window {
+    position: relative;
+    top: 25%;
+    left: 25%;
+    width: 50%;
+    height: 45%;
+    background-color: white;
+    border-radius: 10px;
 }
-.title{
-    width: 127px;
-    height: 56px;
-    margin:42px 124px;
-    font-weight: 100;
+
+.habbit_header {
+    position: relative;
+    top: 9%;
+    font-family: 'Nova Slim', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.input_items {
+    position: absolute;
+    left: 8%;
+    width: 84%;
+    height: 14%;
+    padding-left: 6%;
+    font-size: 21px;
+    line-height: 24px;
+    border: 1px solid #BDBDBD;
+    border-radius: 6px;
+}
+
+.name_of_habbit {
+    top: 25%;
+}
+
+.days {
+    top: 50%;
+}
+
+.modal_button {
+    top:75%;
+    background-color: #2F80ED;
+    color:white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
     font-size: 24px;
     line-height: 28px;
-    text-transform: uppercase;
     text-align: center;
+}
+
+.input_items::placeholder {
+    font-family: 'Roboto',sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 21px;
+    color: #BDBDBD;
+}
+
+@media screen and (max-width: 600px) {
+    .modal_window {
+        left: 8%;
+        width: 84%;
+    }
+}
+
+/* STYLES FOR THE HEADER TITLE AND BUTTON */
+.container{
+    display: flex;
+    justify-content: center;
+    padding: 12px;
+    flex-direction: column;
+    
+}
+.header__title{
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    line-height: 20px;
+    font-weight: thin;
     color: #4F4F4F;
-    margin-bottom: 0;
-}
-button{
-    background: #2F80ED;
-    border-radius: 6px;
-    line-height: 16px;
-    font-weight: 500;
-    font-size: 10px;
+    font-size: 24px;
     text-align: center;
-    text-transform: uppercase;
-    color: #F2F2F2;
-    padding:5px 15px;
-    margin-top: 12px;
-    margin-bottom:15px;
+    margin-top: 22px;
+    line-height: 1.9rem;
 }
-.items{
+.button{
+    color:#F2F2F2;
+    background-color: #2F80ED;
+    border-radius:6px;
+    border:none;
+    font-size:10px;
+    text-transform: uppercase;
+    padding:5px 26px;
+}
+.header__add-button{
+    display: flex;
+    justify-content: center;
+    margin-top:0.9rem;
+    margin-bottom: 15px;
+}
+/*   STYLES FOR HABIT-LIST AND SAMPLE HABBIT CARD   */
+.habbit-list{
+    width:100%;
+    height: auto;
+}
+.habbit-card{
+    display: flex;
+    justify-content: space-between;
+    border-radius:6px;
+    background-color: #F2F2F2;
     width:100%;
     height:auto;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    vertical-align: middle;
+    margin-bottom:3.2rem;
+    flex-direction: row;
+    padding:0 2rem;
 }
-.item,
-.item-nums,
-.success,
-.fail,
-.left{
-    display: flex;
-}
-.item-nums{
-    justify-content: center;
-    align-items: center;
-}
-.success,
-.fail,
-.left{
-    flex-direction: column;
-    align-items: center;
-    margin:0 5px;
-}
-.description{
+.habbit-card__description{
     display: flex;
     align-items: center;
-    float:left;
-    width:100%;
-    margin-left:19px;
+    font-size: 14px;
+    line-height: 16px;
+    
 }
-.item{
-    width:100%;
-    background: #F2F2F2;
-    border-bottom: white;
-}
-.num,
-.subtitle{
-    padding: 0;
-    margin:0;    
+.habbit-card__details{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-right:-1rem;
+    margin-top:10px;
+    margin-bottom:10px;
+    
 }
 .num{
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 28px;
-}
-.subtitle{
-    font-weight: 200;
-    font-size: 10px;
-    line-height: 8px;
-    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    font-size:24px; 
+    margin-left:6px;
+    font-weight:bold
 }
 .success-num{
-    color: #27AE60;
+    color:#27AE60;
 }
 .fail-num{
-    color: #EB5757;
+    color:#EB5757;
 }
 .left-num{
-    color: #9B51E0;
+    color:#9B51E0;
+}
+.subtitle{
+    font-style: thin;
+    font-size: 7px;
+    text-transform: uppercase;
+    margin-left:6px;
+    margin-top: -2px;
 }
