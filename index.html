@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>21 habbits</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="modal_window_background">
@@ -13,9 +14,55 @@
           <span class="habbit_header">ЖАНЫ АДАТ КОШУУ</span>
           <input type="text" class="input_items name_of_habbit" placeholder="Адаттын аты"> <br>
           <input type="number" class="input_items days" min="21" max="90" placeholder="21 кун"> <br>
-          <input type="button" class="input_items modal_button" value="КОШ" >
+          <input type="button" class="input_items modal_button button" value="КОШ" >
         </form>
     </div>
+    
+ <div class="container">
+     <div class="header">
+
+        <div class="header__title">
+          21 кундук <br>адат
+        </div>
+
+        <div class="header__add-button">
+          <button class="button">жаны адат кошуу</button>
+        </div>
+
+     </div>
+
+     <div class="habbit-list">
+         <div class="habbit-card-0 habbit-card">
+             
+
+             <div class="habbit-card__description">
+                <p>25 бет китеп окуу</p>
+             </div>
+
+            <div class="habbit-card__details">
+
+                <div class="habbit-card__status habbit-card__status--succes">
+                    <p class="success-num num">12</p>
+                    <p class="subtitle">ийгиликтуу</p>
+                </div>
+
+                <div class="habbit-card__status habbit-card__status--fail">
+                    <p class="fail-num num">1</p>
+                    <p class="subtitle">болбоду</p>
+                </div>
+
+                <div class="habbit-card__status habbit-card__status-left">
+                    <p class="left-num num">8</p>
+                    <p class="subtitle">калдык</p>
+                </div>
+
+            </div>
+            
+        </div>
+         
+     </div>
+ </div>
+
    <script src="main.js"></script> 
 </body>
 </html>
